@@ -18,7 +18,7 @@ import br.fai.lds.memento.caretaker.EditorHistory;
  * 3. Cuidador salva o Memento no histórico
  * 4. Para desfazer: Cuidador recupera Memento e Editor restaura estado
  */
-public class MementoDemo {
+public class Main {
     public static void main(String[] args) {
         // Criando os participantes do padrão
         TextEditor editor = new TextEditor();     // ORIGINADOR
@@ -116,25 +116,4 @@ public class MementoDemo {
         System.out.println("✓ Histórico gerenciado externamente");
         System.out.println("✓ Fácil implementação de undo/redo");
     }
-    
-    /*
-     * OBSERVAÇÕES IMPORTANTES PARA ESTUDO:
-     * 
-     * 1. SEPARAÇÃO DE RESPONSABILIDADES:
-     *    - TextEditor: Sabe COMO criar e restaurar estados
-     *    - TextMemento: Sabe ARMAZENAR estados de forma segura
-     *    - EditorHistory: Sabe QUANDO salvar e recuperar estados
-     * 
-     * 2. ENCAPSULAMENTO:
-     *    - O Cuidador nunca acessa diretamente os dados do Editor
-     *    - O Memento protege os dados, permitindo acesso apenas ao Originador
-     * 
-     * 3. IMUTABILIDADE:
-     *    - Uma vez criado, o Memento nunca muda
-     *    - Isso garante que os estados salvos permaneçam íntegros
-     * 
-     * 4. FLEXIBILIDADE:
-     *    - Pode implementar undo/redo, checkpoints, versões, etc.
-     *    - Fácil de estender para múltiplos tipos de operações
-     */
 }
