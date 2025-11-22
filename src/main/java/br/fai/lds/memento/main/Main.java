@@ -1,4 +1,4 @@
-package br.fai.lds.memento.demo;
+package br.fai.lds.memento.main;
 
 import br.fai.lds.memento.originator.TextEditor;
 import br.fai.lds.memento.caretaker.EditorHistory;
