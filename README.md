@@ -1,5 +1,5 @@
 # Guia de Estudo - Padrão Memento
-  🎯 O que é o Padrão Memento?
+  🎯 O que é o Padrão Memento?<br>
   O Memento é um padrão comportamental que permite salvar e restaurar estados de objetos sem quebrar o encapsulamento.
 
 
